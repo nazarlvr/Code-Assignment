@@ -35,10 +35,10 @@ public class Building {
     }
 
     public void setFloorPassengers(){
-        for (int i = 0; i < floorsNumber; ++i){
-            ArrayList<Passenger> floorPassengers = Generator.generateFloorPassengers(i, floorsNumber, StartVariables.getStartValues().get(i));
+        for (int i = 0; i < this.getFloorsNumber(); ++i){
+            ArrayList<Passenger> floorPassengers = Generator.generateFloorPassengers(i, this.getFloorsNumber(), StartVariables.getStartValues().get(i));
             Floor floor = new Floor(floorPassengers);
-            floors.add(floor);
+            this.getFloors().add(floor);
         }
     }
 
@@ -78,6 +78,10 @@ public class Building {
         this.setElevatorPassengers();
     }
 
+    public void proceedDirectionTest(){
+        this.proceedDirection();
+    }
+
     private void proceedDirection() {
         if (elevator.getElevatorPassengers().size() == 0){
             int upPassenger = 0;
@@ -95,13 +99,13 @@ public class Building {
                 } else{
                     if (elevator.getCurrentFloor() == 0){
                         elevator.setDirection(Direction.UP);
-                    } else {
-                        if (upPassenger >= downPassenger){
-                            elevator.setDirection(Direction.UP);
-                        } else{
-                            elevator.setDirection(Direction.DOWN);
-                        }
                     }
+                    }
+                } else {
+                if (upPassenger >= downPassenger){
+                    elevator.setDirection(Direction.UP);
+                } else{
+                    elevator.setDirection(Direction.DOWN);
                 }
             }
         }

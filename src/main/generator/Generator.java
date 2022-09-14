@@ -1,5 +1,9 @@
 package main.generator;
 
+import main.building.Building;
+import main.building.Building;
+import main.floor.Floor;
+import main.main.StartVariables;
 import main.passenger.Passenger;
 
 import java.util.ArrayList;
@@ -10,6 +14,7 @@ public class Generator {
     public static final int MinFloorsNumber = 5;
     public static final int MaxFloorsPassengerNumber = 10;
     public static final int MaxElevatorPassengerNumber = 5;
+
     public static ArrayList<Integer> generateStartValues() {
         Random rnd = new Random();
         int n = rnd.nextInt(MaxFloorsNumber - MinFloorsNumber + 1) + MinFloorsNumber;
@@ -39,4 +44,6 @@ public class Generator {
         }
         return targetFloor;
     }
+
+
 }
