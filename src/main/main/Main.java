@@ -17,8 +17,8 @@ public class Main {
         elevator.setDirection(Direction.UP);
         Building building = new Building(elevator, floorsNumber);
         building.setFloorPassengers();
-        building.setElevatorPassengers();
         printStartInfo(building);
+        building.setElevatorPassengers();
         while(!s.equals("stop")){
             Scanner sc = new Scanner(System.in);
             s = sc.nextLine();

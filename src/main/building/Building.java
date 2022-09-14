@@ -43,9 +43,10 @@ public class Building {
     }
 
     public void setElevatorPassengers() {
-       int currentElevatorPassengerNumber = this.elevator.getElevatorPassengers().size();
+       int currentElevatorPassengerNumber = elevator.getElevatorPassengers().size();
+       Elevator elevator = this.elevator;
        if (currentElevatorPassengerNumber < Generator.MaxElevatorPassengerNumber && floors.get(elevator.getCurrentFloor()).getPassengers().size() > 0){
-            for (int i = 0; i < floors.get(elevator.getCurrentFloor()).getPassengers().size(); ++i){
+            for (int i = 0; i < floors.get(this.elevator.getCurrentFloor()).getPassengers().size(); ++i){
                 Passenger passenger = floors.get(elevator.getCurrentFloor()).getPassengers().get(i);
                 if((passenger.getTargetFloor() > elevator.getCurrentFloor()
                         && elevator.getDirection() == Direction.UP) ||
