@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9334f871-9d24-49e0-8b1a-33f15abfebcb" name="Changes" comment="Bug fixed">
+    <list default="true" id="9334f871-9d24-49e0-8b1a-33f15abfebcb" name="Changes" comment="Unit tests added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodeAssignment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/building/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/building/Building.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generator/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/main/StartVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main/StartVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,18 +54,16 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.elevatorTest">
-    <configuration name="BuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.main.Main" />
       <module name="CodeAssignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.buildingTest.*" />
+          <option name="PATTERN" value="main.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.buildingTest" />
-      <option name="MAIN_CLASS_NAME" value="test.buildingTest.BuildingTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.elevatorTest" />
         <item itemvalue="JUnit.FloorTest" />
         <item itemvalue="JUnit.PassengerTest" />
         <item itemvalue="JUnit.GeneratorTest" />
-        <item itemvalue="JUnit.BuildingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +148,7 @@
       <updated>1663066043771</updated>
       <workItem from="1663066049286" duration="25245000" />
       <workItem from="1663148099672" duration="7748000" />
-      <workItem from="1663156067595" duration="3106000" />
+      <workItem from="1663156067595" duration="3710000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1663147329039</created>
@@ -169,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663148327031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Unit tests added">
+      <created>1663159666444</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663159666444</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +191,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixed" />
+    <MESSAGE value="Unit tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit tests added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -199,7 +202,7 @@
     <SUITE FILE_PATH="coverage/CodeAssignment$FloorTest.ic" NAME="FloorTest Coverage Results" MODIFIED="1663159181561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.floorTest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/CodeAssignment$elevatorTest.ic" NAME="elevatorTest Coverage Results" MODIFIED="1663159586861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/CodeAssignment$elevatorTest.ic" NAME="elevatorTest Coverage Results" MODIFIED="1663159630214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.elevatorTest.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/CodeAssignment$FloorTest_MergeListsTest.ic" NAME="FloorTest.MergeListsTest Coverage Results" MODIFIED="1663154371072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

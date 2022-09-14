@@ -12,13 +12,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         String s = "";
-        int floorsNumber = StartVariables.getStartValues().size(), currentStep = 0;
+        int floorsNumber = StartVariables.getStartValues().size(), currentStep = 1;
         Elevator elevator = new Elevator(0);
         elevator.setDirection(Direction.UP);
         Building building = new Building(elevator, floorsNumber);
         building.setFloorPassengers();
         printStartInfo(building);
         building.setElevatorPassengers();
+        printStepInfo(0, building);
         while(!s.equals("stop")){
             Scanner sc = new Scanner(System.in);
             s = sc.nextLine();
